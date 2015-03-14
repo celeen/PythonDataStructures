@@ -1,40 +1,77 @@
-from empty_exception import EmptyException
+from custom_exceptions import *
 
-class List:
-	def __init__(self):
-		self.storage = []
+class MetaList:
+	
+	def __init__(self, *starting_values):
+		if not starting_values:
+			self.storage = []
+		else:
+			self.storage = list(starting_values)
+
+	def __getitem__(self, index):
+		return self.storage[index]
+
+	def __setitem__(self, index, value):
+		self.storage[index] = value
 
 	def size(self):
 		return len(self.storage)
 	
 	def is_empty(self):
-		return self.size() == 0
-
-	def insert(self, item, position=0):
-		self.empty_check(position)
-		self.storage.insert(position, item)
-
+		return not self.storage
+	
 	def at(self, position, put=None):
-		self.empty_check(position)
-
-		if put != None:
+		# self.empty_check(position)
+		if put is not None:
 			self.storage[position] = put
 
 		return self.storage[position]
 
-	def append(self, item):
-		self.storage.append(item)
+	def insert(self, item, position=0):
+		# self.empty_check(position)
+		self.storage.insert(position, item)
+
+	def append(self, x):
+		self.insert(x, len(self.storage))
 		return self
 
-	def remove_at(self, position=0):
-		self.empty_check(position)
+	def extend(self, extension):
+		for item in extension:
+			self.storage.append(item)
 
-		self.storage.remove(self.at(position))
+		return self.storage
 
-	def empty_check(self, position):
-		if position > len(self.storage):
-			raise EmptyException
-	# more advanced stuff
+	def remove(self, x):
+		self.storage.remove(x)
 
+	def pop(self, index=-1):
+		self.storage.remove(self[index])
+
+	def index(self, x):
+		for i in range(self.size()):
+			if self[i] == x:
+				return i
+		else:
+			raise ItemNotFound
+
+	def count(self, x):
+		instances = 0
+		for item in self:
+			if item == x:
+				instances += 1
+
+		return instances
+
+	#  -----------BONUS---------------
+
+	def sort(self):
+		# new_list = []
+		# for i in range(self.size()):
+		# 	if self[i] < self[i+1]:
+		# 		new_list.append(self[i])
+		pass
+
+	def reverse():
+		pass
 
 

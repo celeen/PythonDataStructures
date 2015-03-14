@@ -12,9 +12,8 @@ class MetaListTests(unittest.TestCase):
 		self.assertEqual(self.list.is_empty(), False)
 
 	def test_getter(self):
-		pass
+		self.assertEqual(self.list[0], 4)
 
-		# insert can insert an item anywhere in the list, moving 
 	def test_setter(self):
 		self.list[0] = 3
 		self.assertEqual(self.list[0], 3)
@@ -73,4 +72,9 @@ class MetaListTests(unittest.TestCase):
 		self.assertEqual(self.list.storage, [0,4,5,6])
 
 	def test_reverse(self):
-		self.assertEqual(False, True)
+		self.list.reverse()
+		self.assertEqual(self.list.storage, [6,5,4])
+
+		self.list = MetaList(4,5,6,7,8,9)
+		self.list.reverse()
+		self.assertEqual(self.list.storage, [9,8,7,6,5,4])

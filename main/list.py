@@ -65,13 +65,22 @@ class MetaList:
 	#  -----------BONUS---------------
 
 	def sort(self):
-		# new_list = []
-		# for i in range(self.size()):
-		# 	if self[i] < self[i+1]:
-		# 		new_list.append(self[i])
-		pass
+		for i in range(1, self.size()):
+			j = i
+			while j > 0 and self[j] < self[j - 1]:
+				self[j], self[j - 1] = self[j - 1], self[j]
+				j -= 1
+		
+		return self
+		
+	def reverse(self):
+		j = self.size() - 1
+	
+		for i in range(self.size()):
+			if j - i >= 1:
+				self[i], self[j] = self[j], self[i]
+			j -= 1
 
-	def reverse():
-		pass
+		return self
 
 

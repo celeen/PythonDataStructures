@@ -36,4 +36,8 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 	- Find the related file in the main package, and delete its contents.
 		- run the tests again; confirm they run and that nothing passes.
 
-*Happy Coding!*	
+*Happy Coding!*
+
+## Feedback
+
+Any feedback is welcome in the form of PRs, issues, or emails. This is a work in progress.	

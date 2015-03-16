@@ -26,6 +26,7 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 			$> pyenv install 2.7.9
 			$> pyenv shell 2.7.9
 			```
+	- If this stuff doens't work for you (or if you're on windows- sorry) don't worry too much. These exercises *should* be compatible with python 3, but I can't guarantee that.
 - install [**nose**](https://nose.readthedocs.org/en/latest/):
 	```pip install nose```
 

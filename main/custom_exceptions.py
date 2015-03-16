@@ -1,3 +1,5 @@
+import __future__
+
 class EmptyException(Exception):
 	pass
 

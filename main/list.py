@@ -1,4 +1,5 @@
-from custom_exceptions import *
+import __future__
+from .custom_exceptions import *
 
 class MetaList:	
 	def __init__(self, *starting_values):

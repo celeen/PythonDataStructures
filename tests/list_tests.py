@@ -8,15 +8,15 @@ class MetaListTests(unittest.TestCase):
 		self.list = MetaList()
 		self.list = MetaList(4,5,6)
 
-	def test_01_is_empty(self):
-		self.assertEqual(self.list.is_empty(), False)
-
-	def test_02_getter(self):
+	def test_01_getter(self):
 		self.assertEqual(self.list[0], 4)
 
-	def test_03_setter(self):
+	def test_02_setter(self):
 		self.list[0] = 3
 		self.assertEqual(self.list[0], 3)
+
+	def test_03_is_empty(self):
+		self.assertEqual(self.list.is_empty(), False)
 
 	def test_04_insert_with_one_argument(self):
 		# insert automatically inserts an item at the end

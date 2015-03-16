@@ -22,9 +22,10 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 		- don't forget [#3 in the installation instructions](https://github.com/yyuu/pyenv#basic-github-checkout. That's important.
 		- try:
 			
-			```pyenv install 2.7.9```
-			
-			```pyenv shell 2.7.9```
+			```
+			$> pyenv install 2.7.9
+			$> pyenv shell 2.7.9
+			```
 - install [**nose**](https://nose.readthedocs.org/en/latest/):
 	```pip install nose```
 

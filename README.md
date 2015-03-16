@@ -19,10 +19,10 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 - *Make sure you have python installed*, and check the version: this repo uses 2.x
 	- ```python --version``` will check the version you're using
 	- if you're using python 3.x, and you don't already have a tool like pyenv installed, go ahead and [install it](https://github.com/yyuu/pyenv). After it's installed, check out the docs for which commands will set up your environment.
-		- don't forget #3 in the installation instructions. That's important.
+		- don't forget [#3 in the installation instructions](https://github.com/yyuu/pyenv#basic-github-checkout. That's important.
 		- try:
-		```$: pyenv install 2.7.9
-		$: pyenv shell 2.7.9```
+		```pyenv install 2.7.9```
+		```pyenv shell 2.7.9```
 - install [**nose**](https://nose.readthedocs.org/en/latest/):
 	```pip install nose```
 
@@ -32,9 +32,10 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 	```git clone git@github.com:celeen/PythonDataStructures.git```
 - Then choose the Data Structure you're exploring- take, for example, Lists.
 	- cd into the tests directory, and run ```nosetests list_tests.py```
-		- confirm it runs, and that everything passes
+		-run ```nosetests -v list_tests.py``` for verbose output
+	- confirm it runs, and that everything passes
 	- Find the related file in the main package, and delete its contents.
-		- run the tests again; confirm they run and that nothing passes.
+	- run the tests again; confirm they run and that nothing passes.
 
 **Happy Coding!**
 

@@ -21,8 +21,10 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 	- if you're using python 3.x, and you don't already have a tool like pyenv installed, go ahead and [install it](https://github.com/yyuu/pyenv). After it's installed, check out the docs for which commands will set up your environment.
 		- don't forget [#3 in the installation instructions](https://github.com/yyuu/pyenv#basic-github-checkout. That's important.
 		- try:
-		```pyenv install 2.7.9```
-		```pyenv shell 2.7.9```
+			
+			```pyenv install 2.7.9```
+			
+			```pyenv shell 2.7.9```
 - install [**nose**](https://nose.readthedocs.org/en/latest/):
 	```pip install nose```
 

@@ -1,4 +1,4 @@
-# Exploring Data structures in Python
+# Exploring Data Structures in Python
 
 ## About
 
@@ -12,7 +12,7 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 
 #### Here's a detailed breakdown is the software you'll need in order to work through these exercises:
 
-- You'll need *git*, for cloning the repo:
+- You'll need **git**, for cloning the repo:
 	- First, double check to see if you already have it:
 	```git --version```
 	- If you don't, visit [this website](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for instructions.
@@ -23,7 +23,7 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 		- try:
 		```$: pyenv install 2.7.9
 		$: pyenv shell 2.7.9```
-- install [*nose*](https://nose.readthedocs.org/en/latest/):
+- install [**nose**](https://nose.readthedocs.org/en/latest/):
 	```pip install nose```
 
 ### Getting started
@@ -36,7 +36,7 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 	- Find the related file in the main package, and delete its contents.
 		- run the tests again; confirm they run and that nothing passes.
 
-*Happy Coding!*
+**Happy Coding!**
 
 ## Feedback
 

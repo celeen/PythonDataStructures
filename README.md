@@ -35,7 +35,7 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 	```git clone git@github.com:celeen/PythonDataStructures.git```
 - Then choose the Data Structure you're exploring- take, for example, Lists.
 	- cd into the tests directory, and run ```nosetests list_tests.py```
-		-run ```nosetests -v list_tests.py``` for verbose output
+		- run ```nosetests -v list_tests.py``` for verbose output
 	- confirm it runs, and that everything passes
 	- Find the related file in the main package, and delete its contents.
 	- run the tests again; confirm they run and that nothing passes.

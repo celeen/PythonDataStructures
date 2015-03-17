@@ -33,7 +33,7 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 ### Getting started
 
 - First, clone the repo:
-	```git clone git@github.com:celeen/PythonDataStructures.git```
+	```git clone https://github.com/celeen/PythonDataStructures.git```
 - Then choose the Data Structure you're exploring- take, for example, Lists.
 	- cd into the tests directory, and run ```nosetests list_tests.py```
 		- run ```nosetests -v list_tests.py``` for verbose output

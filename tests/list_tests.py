@@ -50,7 +50,7 @@ class MetaListTests(unittest.TestCase):
 		self.list.pop()
 		self.assertEqual(self.list.storage, [4,5])
 		# TF: added test to ensure LAST item is popped, even if it appears multiple times
-		self.list = [4,5,4,5]
+		self.list = MetaList(4,5,4,5)
 		self.list.pop()
 		self.assertEqual(self.list.storage, [4,5,4])
 
@@ -58,7 +58,7 @@ class MetaListTests(unittest.TestCase):
 		self.list.pop(1)
 		self.assertEqual(self.list.storage, [4,6])
 		# TF: added test to ensure indexed item is popped, even if it appears multiple times
-		self.list = [4,5,6,4,5,6]
+		self.list = MetaList(4,5,6,4,5,6)
 		self.list.pop(4)
 		self.assertEqual(self.list.storage, [4,5,6,4,6])
 

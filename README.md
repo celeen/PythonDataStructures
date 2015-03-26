@@ -43,8 +43,8 @@ I've done a bit of asking around, and attempted to adopt most commonly followed 
 
 **Happy Coding!**
 
-###Notes:
-##Lists:
+##Notes:
+###Lists:
 
 -You get ```remove()``` and ```append()``` for free. Please attempt to implement the others using these two.
 -**Thanks to @gotrhythm88 for noticing that the initial implementation of ```pop()``` assumes there are no duplicates in the list. The tests have been changed, and a good solution is a WIP right now. Feel free to submit a pull reuqest if you've got one!**

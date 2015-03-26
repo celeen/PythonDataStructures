@@ -17,14 +17,15 @@ class MetaListTests(unittest.TestCase):
 
 	def test_03_is_empty(self):
 		self.assertEqual(self.list.is_empty(), False)
+		self.list = MetaList()
+		self.assertEqual(self.list.is_empty(), True)
 
-	def test_04_insert_with_one_argument(self):
-		# insert automatically inserts an item at the end
-		self.list.insert(1)
+	def test_04_insert_at_zero(self):
+		self.list.insert_at_zero(1)
 		self.assertEqual(self.list[0], 1)
 
-	def test_05_insert_with_two_arguments(self):
-		self.list.insert(3, 1)
+	def test_05_insert(self):
+		self.list.insert(1, 3)
 		self.assertEqual(self.list[1], 3)
 		self.assertEqual(self.list.storage, [4,3,5,6])
 
@@ -45,10 +46,16 @@ class MetaListTests(unittest.TestCase):
 	def test_09_naked_pop(self):
 		self.list.pop()
 		self.assertEqual(self.list.storage, [4,5])
+		self.list = MetaList(4,5,4,5)
+		self.list.pop()
+		self.assertEqual(self.list.storage, [4,5,4])
 
 	def test_10_clothed_pop(self):
 		self.list.pop(1)
 		self.assertEqual(self.list.storage, [4,6])
+		self.list = MetaList(4,5,6,4,5,6)
+		self.list.pop(4)
+		self.assertEqual(self.list.storage, [4,5,6,4,6])
 
 	def test_11_index(self):
 		self.assertEqual(self.list.index(6), 2)

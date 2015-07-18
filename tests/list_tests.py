@@ -1,9 +1,9 @@
-import unittest 
+import unittest
 from main.list import MetaList
 from main.custom_exceptions import *
 
 class MetaListTests(unittest.TestCase):
-	
+
 	def setUp(self):
 		self.list = MetaList()
 		self.list = MetaList(4,5,6)
@@ -21,7 +21,7 @@ class MetaListTests(unittest.TestCase):
 		self.assertEqual(self.list.is_empty(), True)
 
 	def test_04_insert_at_zero(self):
-		self.list.insert_at_zero(1)
+		self.list.insert(0,1)
 		self.assertEqual(self.list[0], 1)
 
 	def test_05_insert(self):
